@@ -44,3 +44,7 @@ const breadthFirstValues = (root) => {
 };
 
 breadthFirstValues(a);
+
+/////////// Practice1
+// return true if a value exists in the tree
+const breadthFirstSearch1 = (root, target) => {};
