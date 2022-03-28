@@ -60,3 +60,8 @@ const breadthFirstSearch1 = (root, target) => {
   }
   return false;
 };
+
+////////practice 2
+// return the sum of all values in a tree
+
+const breadthFirstSearch2 = (root) => {};
