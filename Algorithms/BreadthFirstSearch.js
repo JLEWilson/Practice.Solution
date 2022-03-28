@@ -47,4 +47,16 @@ breadthFirstValues(a);
 
 /////////// Practice1
 // return true if a value exists in the tree
-const breadthFirstSearch1 = (root, target) => {};
+const breadthFirstSearch1 = (root, target) => {
+  if (root === null) return false;
+
+  const queue = [root];
+  while (queue.length > 0) {
+    const current = queue.shift();
+    if (current.val === target) return true;
+
+    if (current.left) queue.push(current.left);
+    if (current.right) queue.push(current.right);
+  }
+  return false;
+};
