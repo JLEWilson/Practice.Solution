@@ -59,3 +59,8 @@ const depthFirstSearch1 = (root, target) => {
   if (root.val === target) return true;
   return depthFirstSearch1(root.left) || depthFirstSearch1(root.right);
 };
+
+////////practice 2
+// return the sum of all values in a tree
+
+const depthFirstSearch2 = (root, target) => {};
