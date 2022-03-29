@@ -50,3 +50,8 @@ const depthFirstValuesR = (root) => {
   const rightValues = depthFirstValuesR(root.right);
   return [root.val, ...leftValues, ...rightValues];
 };
+
+/////////// Practice1
+// return true if a value exists in the tree
+
+const depthFirstSearch1 = (root, target) => {};
