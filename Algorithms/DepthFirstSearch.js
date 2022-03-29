@@ -41,3 +41,12 @@ const depthFirstValues = (root) => {
   }
   return result;
 };
+
+//Recursive
+const depthFirstValuesR = (root) => {
+  if (root === null) return [];
+
+  const leftValues = depthFirstValuesR(root.left);
+  const rightValues = depthFirstValuesR(root.right);
+  return [root.val, ...leftValues, ...rightValues];
+};
