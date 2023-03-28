@@ -58,3 +58,17 @@ const breadthFirstSearch1 = (root, target) => {
   }
   return false;
 };
+
+const breadthFirstSearch2 = (root) => {
+  if (root === null) return 0;
+  let sum = 0;
+  const queue = [root];
+  while (queue.length > 0) {
+    const current = queue.shift();
+    sum += current.val;
+
+    if (current.left) queue.push(current.left);
+    if (current.right) queue.push(current.right);
+  }
+  return sum;
+};
