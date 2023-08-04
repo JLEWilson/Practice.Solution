@@ -21,10 +21,6 @@ const isSubsequence = (s, t) => {
         foundChars += s.charAt(i);
         break;
       }
-
-      if ((j = t.length)) {
-        return false;
-      }
     }
   }
 
